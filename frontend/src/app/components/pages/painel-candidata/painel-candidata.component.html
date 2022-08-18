@@ -1,0 +1,186 @@
+<section class="row">
+    <div class="menu-lateral-candidata col-md-3 position-fixed">
+        <app-menu-painel></app-menu-painel>
+    </div>
+    <div class="painel-content-candidata col-md-9 offset-3">
+        <div class="painel-content container">
+            <h2 class="raj"><fa-icon [icon]="dadosPessoaisIcon"></fa-icon>Dados Pessoais</h2>
+            <form id="dados-pessoais" class="row g3 mt-5">
+                <div class="col-md-6 mb-3">
+                    <label for="nome-candidata">Nome Completo:</label>
+                    <input class="form-control" id="nome-candidata" type="text" name="nome-candidata"
+                        placeholder="Informe seu nome completo" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="nome-social-candidata">Nome Social:</label>
+                    <input class="form-control" id="nome-social-candidata" type="text" name="nome-social"
+                        placeholder="Como gostaria de ser chamada?" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="cpf-candidata">CPF:</label>
+                    <input class="form-control" id="cpf-candidata" type="text" name="cpf-candidata"
+                        placeholder="Informe seu CPF" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="nascto-candidata">Data de Nascimento:</label>
+                    <input class="form-control" id="nascto-candidata" type="text" name="nascto-candidata"
+                        placeholder="01/01/2001" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="est-civil-candidata">Estado Civil:</label>
+                    <select class="form-select" id="est-civil-candidata" type="text" name="est-civil-candidata" required>
+                        <option value="">Selecionar</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="raca-candidata">Raça:</label>
+                    <select class="form-select" id="raca-candidata" type="text" name="raca-candidata" required>
+                        <option value="">Selecionar</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="sexo-bio-candidata">Sexo Biológico:</label>
+                    <select class="form-select" id="sexo-bio-candidata" type="text" name="sexo-bio-candidata" required>
+                        <option value="">Selecionar</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="lkdn-candidata">Linkedin:</label>
+                    <input class="form-control" id="lkdn-candidata" type="url" name="lkdn-candidata"
+                        placeholder="Insira o link do seu perfil" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="github-candidata">GitHub:</label>
+                    <input class="form-control" id="github-candidata" type="url" name="github-candidata"
+                        placeholder="Insira o link da sua conta" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="port-candidata">Outro Portfólio:</label>
+                    <input class="form-control" id="port-candidata" type="url" name="port-candidata"
+                        placeholder="Insira o link de outro portfolio" required>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label for="idiomas-candidata">Dos idiomas abaixo, quais você considera ter pelo menos o nível
+                        intermediário?</label>
+                    <br />
+                    <div class="form-check form-check-inline mt-1">
+                        <input class="form-check-input" type="checkbox" id="idioma-ingles" value="Inglês"
+                            name="idioma-candidata">
+                        <label class="form-check-label" for="idioma-ingles">Inglês</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="idioma-espanhol" value="Espanhol"
+                            name="idioma-candidata">
+                        <label class="form-check-label" for="idioma-espanhol">Espanhol</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="idioma-frances" value="Francês">
+                        <label class="form-check-label" for="idioma-frances">Francês</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="idioma-mandarim" value="Mandarim">
+                        <label class="form-check-label" for="idioma-mandarim">Mandarim</label>
+                    </div>
+                </div>
+                <div class="col-12 mb-3">
+                    <label for="sobre-candidata" class="form-label">Conte um pouco sobre você:</label>
+                    <textarea class="form-control" id="sobre-candidata" rows="3" name="sobre-candidata"></textarea>
+                  </div>
+                <div class="pt-1">
+                    <input type="submit" value="Atualizar Dados Pessoais">
+                </div>
+            </form>
+            <hr class="separador">
+        </div>
+        <div class="painel-content container">
+            <h2 class="raj">
+                <fa-icon [icon]="escolaridadeIcon"></fa-icon>Dados Acadêmicos
+            </h2>
+            <form id="dados-academicos" class="row g3 mt-5">
+                <div class="col-md-6 mb-3">
+                    <label for="instituicao-ensino-candidata">Instituição de ensino:</label>
+                    <input class="form-control" id="instituicao-ensino-candidata" type="text"
+                        name="instituicao-ensino-candidata" placeholder="Ex: USP" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="diploma-candidata">Diploma:</label>
+                    <input class="form-control" id="diploma-candidata" type="text" name="diploma-candidata"
+                        placeholder="Ex: Bacharelado" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="curso-candidata">Curso:</label>
+                    <input class="form-control" id="curso-candidata" type="text" name="curso-candidata"
+                        placeholder="Informe o curso" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="inicio-curso-candidata">Início do curso:</label>
+                    <input class="form-control" id="inicio-curso-candidata" type="text" name="inicio-curso-candidata"
+                        placeholder="Mês e ano - Ex: 01/2001" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="final-curso-candidata">Final do curso:</label>
+                    <input class="form-control" id="final-curso-candidata" type="text" name="final-curso-candidata"
+                        placeholder="Mês e ano - Ex: 01/2001" required>
+                </div>
+                <div class="col-12 mb-3">
+                    <label for="info-curso-candidata" class="form-label">Informações Adicionais:</label>
+                    <textarea class="form-control" id="info-curso-candidata" rows="3" name="info-curso-candidata"></textarea>
+                </div>
+                <div class="pt-1">
+                    <input type="submit" value="Atualizar Dados Acadêmicos">
+                </div>
+            </form>
+            <hr class="separador">
+            <div class="lista-formacoes row">
+                <h3 class="raj">Minhas Formações</h3>
+            </div>
+            <hr class="separador">    
+        </div>
+        <div class="painel-content container">
+            <h2 class="raj">
+                <fa-icon [icon]="experienciaIcon"></fa-icon>Experiência Profissional
+            </h2>
+            <form id="exp-profissional" class="row g3 mt-5">
+                <div class="col-md-6 mb-3">
+                    <label for="instituicao-ensino-candidata">Instituição de ensino:</label>
+                    <input class="form-control" id="instituicao-ensino-candidata" type="text"
+                        name="instituicao-ensino-candidata" placeholder="Ex: USP" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="diploma-candidata">Diploma:</label>
+                    <input class="form-control" id="diploma-candidata" type="text" name="diploma-candidata"
+                        placeholder="Ex: Bacharelado" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="curso-candidata">Curso:</label>
+                    <input class="form-control" id="curso-candidata" type="text" name="curso-candidata"
+                        placeholder="Informe o curso" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="inicio-curso-candidata">Início do curso:</label>
+                    <input class="form-control" id="inicio-curso-candidata" type="text" name="inicio-curso-candidata"
+                        placeholder="Mês e ano - Ex: 01/2001" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="final-curso-candidata">Final do curso:</label>
+                    <input class="form-control" id="final-curso-candidata" type="text" name="final-curso-candidata"
+                        placeholder="Mês e ano - Ex: 01/2001" required>
+                </div>
+                <div class="col-12 mb-3">
+                    <label for="info-curso-candidata" class="form-label">Informações Adicionais:</label>
+                    <textarea class="form-control" id="info-curso-candidata" rows="3" name="info-curso-candidata"></textarea>
+                </div>
+                <div class="pt-1">
+                    <input type="submit" value="Atualizar Dados Acadêmicos">
+                </div>
+            </form>
+            <hr class="separador">
+            <div class="lista-formacoes row">
+                <h3 class="raj">Minhas Experiências</h3>
+            </div>
+            <hr class="separador">    
+        </div>
+    </div>
+    
+</section>
+

@@ -1,0 +1,104 @@
+<section id="home-hero">
+    <div class="overlay"></div>
+    <div class="container-xl">
+        <div class="row">
+            <div class="hero-content">
+                <h1 class="raj">O mercado de tecnologia <br />espera por você, MULHER!</h1>
+                <h2>Procure pela vaga dos seus sonhos</h2>
+                <form id="busca-home" class="d-flex justify-content-between">
+                    <input class="form-control" id="busca" type="text" name="busca" maxlength="30" required>
+                    <input class="submit" type="submit" value="Buscar Vaga">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="home-sobre">
+    <div class="container-xl">
+        <div class="row">
+            <div class="col-6">
+                <img src="assets/img/home_sobre.svg" />
+            </div>
+            <div class="col-6 d-flex flex-column justify-content-center">
+                <h2 class="raj">Sobre o Portal <span class="chaves">{{'{'}}</span>EmpregaElas<span class="chaves">{{'}'}}</span></h2>
+                <p><strong><span class="chaves">{{'{'}}</span>EmpregaElas<span class="chaves">{{'}'}}</span></strong> é um
+                    portal desenvolvido por mulheres programadoras e apaixonadas por tecnologia.<br />
+                    O objetivo deste empreendimento é fomentar a <strong>presença feminina no mercado de
+                        TI</strong>.</p>
+                <a routerLink="candidata" class="botao-1">Saiba Mais ++</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="home-cadastrar">
+    <div class="container-xl">
+        <div class="row">
+            <h2 class="text-center raj">Quem pode se cadastrar?</h2>
+            <div class="row">
+                <div class="col-4 offset-2 mt-5">
+                    <div id="candidata" class="d-flex flex-column pe-3">
+                        <h3 class="raj">Candidatas</h3>
+                        <p>Estudantes e profissionais da área de tecnologia que se identificam com o gênero
+                            feminino,
+                            sejam maiores de 18 anos e que possuam endereço fiscal no Brasil.</p>
+                        <a routerLink="cadastro" class="botao-1">Criar Conta ++</a>
+                    </div>
+                </div>
+                <div class="col-4 mt-5">
+                    <div id="empresa" class="d-flex d-flex flex-column align-items-end text-end ps-3">
+                        <h3 class="raj">Empresas</h3>
+                        <p>Pequenas, médias e grandes organizações com vagas disponíveis
+                            na área de tecnologia e que estejam buscando a equidade de gênero em seus
+                            departamentos.</p>
+                            <a routerLink="cadastro" class="botao-1">Criar Conta ++</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="home-vagas-recentes">
+    <div class="container-xl">
+        <div class="row">
+            <h2 class="text-center mb-5 raj">Vagas mais recentes</h2>
+            <div class="container-cards-vagas d-flex justify-content-evenly">
+                <app-card-vaga></app-card-vaga>
+                <app-card-vaga></app-card-vaga>
+                <app-card-vaga></app-card-vaga>
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+                <a routerLink="vagas" class="botao-2">Procurar mais vagas ++</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="home-empresas">
+    <div class="container-xl">
+        <div class="row d-flex flex-column">
+            <h2 class="text-center raj">Empresas que já divulgam suas vagas no <span
+                    class="chaves">{{'{'}}</span>EmpregaElas<span class="chaves">{{'}'}}</span></h2>
+            <div class="intro">
+                <p class="text-center">Conheça as empresas que já estão trabalhando em prol da equidade de gênero em seus departamentos</p>
+            </div>
+            <div class="col-8 offset-2 my-5">
+                <app-empresa-carrossel></app-empresa-carrossel>
+            </div>
+        </div>
+        <div class="cta-home-empresas d-flex flex-column align-items-center">
+            <p class="text-center">Recrutador! Participe também dessa transformação!</p>
+            <a routerLink="cadastro" class="botao-1">Divulgar vagas para mulheres ++</a>
+        </div>
+    </div>
+</section>
+<section id="home-cta-cadastro">
+    <div class="container-xl">
+        <div class="col-6">
+            <div class="home-cta-cadastro-texto d-flex flex-column">
+                <h2 class="text-uppercase raj">Cadastre-se já</h2>
+                <p>Crie o seu perfil e se inscreva nos processos seletivos de empresas que acreditam na equidade
+                    de gênero no mercado de tecnologia.</p>
+                <a routerLink="cadastro" class="botao-2">Realizar cadastro ++</a>
+            </div>
+        </div>
+    </div>
+</section>

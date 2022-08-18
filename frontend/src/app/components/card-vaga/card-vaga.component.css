@@ -1,0 +1,60 @@
+.card-vaga {
+    background: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+}
+
+.card-vaga .dados-empresa-vaga .logo-empresa a {
+    width: 50px;
+    padding-bottom: 50px;
+    display: block;
+    background-position: 50% 50%;
+    background-size: cover;
+    border: 2px solid #E8E3E3;
+    border-radius: 3px;
+}
+
+.card-vaga .dados-empresa-vaga .logo-empresa a:hover {
+    border: 2px solid #AE9BBA;
+}
+
+.card-vaga .dados-empresa-vaga .nome-empresa-vaga {
+    padding-left: 10px;
+}
+
+.card-vaga .dados-empresa-vaga .nome-empresa-vaga h3 {
+    font-size: 1.1em;
+}
+
+.card-vaga .dados-empresa-vaga .nome-empresa-vaga h3 a {
+    color: #A36986;
+}
+
+.card-vaga .dados-empresa-vaga .nome-empresa-vaga h3 a:hover {
+    color: #EA8D8F;
+}
+
+.card-vaga .dados-empresa-vaga .nome-empresa-vaga h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+.card-vaga .modalidade-nivel {
+    padding: 20px 0 5px;
+}
+.card-vaga .modalidade-nivel span {
+    font-size: 0.9em;
+}
+
+.card-vaga .mais-info a.botao-1 {
+    padding: 10px 30px 7px;
+    font-size: 0.9em;
+}
+
+fa-icon.ng-fa-icon {
+    margin-right: 5px;
+    color: #A36986;
+    font-size: 20px;
+}

@@ -1,0 +1,42 @@
+<!--<button type="button" (click)="carregarVagas()">Carregar </button>-->
+
+<div class="main">
+
+<div class="container-xl">
+    <div class="row">
+        <h1 class="raj text-center">Encontre a vaga dos seus sonhos</h1>
+        <div class="w-100 m-5">
+        <form id="busca-home" class="d-flex justify-content-between">
+            <input class="form-control" id="busca" type="text" name="busca" maxlength="30" required>
+            <input class="submit" type="submit" value="Buscar Vaga">
+        </form>
+    </div>
+        <div *ngFor="let vaga of vagas" class="col-4">
+            <div class="card-vaga d-flex flex-column">
+                <div class="dados-empresa-vaga d-flex">
+                    <div class="logo-empresa">
+                        <a href="#link-empresa"
+                            style="background-image:url('https://media-exp1.licdn.com/dms/image/C4E0BAQEVEWVqVIMung/company-logo_200_200/0/1650319092343?e=1668038400&v=beta&t=rhFPM8y7W6Yc8u0-YcPgjLCOr85WMU3ZUALlzmYgnzY');">
+                        </a>
+                    </div>
+                    <div class="nome-empresa-vaga d-flex flex-column justify-content-evenly">
+                        <h3 class="titulo-vaga m-0"><a href="#link-vaga">{{vaga.cargo}}</a></h3>
+                        <h4 class="nome-empresa m-0">Serasa Experian - {{vaga.cidade}} - SP</h4>
+                    </div>
+                </div>
+                <div class="modalidade-nivel d-flex">
+                    <div class="modalidade d-flex w-50">
+                        <fa-icon [icon]="clockIcon"></fa-icon><span>{{vaga.jornada}}</span>
+                    </div>
+                    <div class="nivel d-flex w-50">
+                        <fa-icon [icon]="personIcon"></fa-icon><span>{{vaga.nivel}}</span>
+                    </div>
+                </div>
+                <div class="mais-info d-flex">
+                    <a href="#link-vaga" class="botao-1 w-100 text-center">Mais informações ++</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

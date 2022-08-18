@@ -1,0 +1,25 @@
+<div id="modal-login" class="modal fade" aria-hidden="true">
+    <div class="modal-dialog">
+        <fa-icon [icon]="closeIcon"></fa-icon>
+        <div class="modal-content">
+            <div class="form-container-acesso">
+                <h2 class="raj">Acesse o seu painel de usuário:</h2>
+                <form id="login" method="post" action="/">
+                    <div class="mb-3">
+                        <label for="email">E-mail de cadastro:</label>
+                        <input class="form-control" id="email" type="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="senha">Senha:</label>
+                        <input class="form-control" id="senha" type="password" name="senha" required>
+                    </div>
+                    <div class="mt-1">
+                        <input type="submit" value="Entrar">
+                    </div>
+                </form>
+                <p class="recuperar-senha"><a href="#">Esqueci minha senha.</a></p>
+                <h2 class="link-cadastro raj">Ainda não é cadastrado? <a routerLink="cadastro">Clique aqui</a>.</h2>
+            </div>
+        </div>
+    </div>    
+</div>

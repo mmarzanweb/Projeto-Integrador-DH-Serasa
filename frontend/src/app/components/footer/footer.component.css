@@ -1,0 +1,39 @@
+footer {
+    background: #A36986;
+    color: #fff;
+}
+
+footer .logo-footer a img {
+    width: 100%;
+    max-width: 350px;
+}
+
+footer ul li {
+    padding: 5px 0;
+}
+
+footer ul li a {
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+footer ul li a:hover {
+    color: #E8E3E3;
+}
+
+footer h3 {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+footer .apoio-footer img {
+    padding: 0 15px;
+}
+
+footer .copy {
+    background: #E8E3E3;
+    color: #555;
+    font-size: 0.75em;
+    font-weight: 400;
+    padding: 5px 0;
+}

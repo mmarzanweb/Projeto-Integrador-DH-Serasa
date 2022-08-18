@@ -1,0 +1,33 @@
+header {
+    background: #A36986;
+    padding: 0 15px;
+}
+
+nav.menu-desktop ul li {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+nav.menu-desktop ul li a {
+    color: #fff;
+}
+
+.botao-header-cadastro {
+    background: #E8E3E3;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #A36986;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 15px 30px 12px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.botao-header-cadastro:hover {
+    background: #AE9BBA;
+    color: #fff;
+}

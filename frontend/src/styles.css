@@ -1,0 +1,287 @@
+body {
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.5em;
+    color: #555;
+}
+
+*.raj {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0 0 15px;
+    padding: 0;
+}
+
+h1.margin-0 h2.margin-0,
+h3.margin-0,
+h4.margin-0,
+h5.margin-0,
+h6.margin-0 {
+    margin: 0;
+}
+
+p:last-child {
+    margin: 0 !important;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2em;
+    font-weight: 600;
+}
+
+h4,
+h5,
+h6 {
+    line-height: 1.3em;
+    font-weight: 600;
+}
+
+h1.cap,
+h2.cap,
+h3.cap,
+h4.cap,
+h5.cap,
+h6.cap {
+    text-transform: capitalize;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 1.8em;
+}
+
+h6 {
+    font-size: 1.5em;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    transition: .3s;
+}
+
+*::placeholder {
+    color: rgba(84, 84, 84, 0.75);
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+span.chaves {
+    position: relative;
+    top: -0.05em;
+}
+
+.form-control {
+    border: none;
+}
+
+a.botao-1 {
+    padding: 13px 30px 10px;
+    margin-top: 15px;
+    background: #A36986;
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+a.botao-1:hover {
+    background: #AE9BBA;
+}
+
+a.botao-2 {
+    padding: 13px 30px 10px;
+    margin-top: 15px;
+    background: #fff;
+    color: #555;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+a.botao-2:hover {
+    background: #E8E3E3;
+}
+
+.modal.show .modal-dialog fa-icon {
+    font-size: 20px;
+    color: #A36986;
+    position: absolute;
+    z-index: 999;
+    top: 15px;
+    right: 15px;
+}
+
+div.overlay {
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.owl-nav {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.owl-nav i {
+    font-size: 30px;
+    color: #A36986;
+    margin: 0 5px;
+}
+
+.painel-content-candidata {
+    padding: 80px 0;
+}
+
+.painel-content h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #A36986;
+}
+
+.painel-content h3 {
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #A36986;
+}
+
+.painel-content fa-icon {
+    color: #A36986;
+    margin-right: 10px;
+}
+
+.painel-content form label {
+    font-size: .9em;
+}
+
+.painel-content form input {
+    border: 1px solid #E8E3E3;
+    margin-top: 5px;
+    height: 40px;
+    line-height: 1em;
+}
+
+.painel-content form input:focus , .painel-content form select:focus, .painel-content form textarea:focus {
+    box-shadow: 0 0 0 3px #a3698650;
+}
+
+.painel-content form select {
+    border: 1px solid #E8E3E3;
+    margin-top: 5px;
+    font-size: 0.9em;
+    height: 40px;
+    line-height: 1em;
+}
+
+.painel-content form textarea {
+    border: 1px solid #E8E3E3;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+form input[type='submit'] {
+    background: #A36986;
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 3px 30px 0;
+    height: 40px;
+    border: none !important;
+    border-radius: 3px;
+    transition: .3s;
+}
+
+form input[type='submit']:hover {
+    background: #AE9BBA;
+}
+
+form input[type='submit']:focus {
+    border: none !important;
+    box-shadow: 0 0 0 3px #a3698650;
+}
+
+hr.separador {
+    margin: 80px 0;
+}
+
+.lista-container {
+    background: #E8E3E3;
+    border-radius: 5px;
+}
+
+.lista-container > * {
+    display: table-row;
+    height: 40px;
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+}
+
+.lista-container .header {
+    font-weight: 600;
+}
+
+.lista-container .lista-col {
+    display: table-cell;
+    padding: 0 15px;
+}
+
+form input[type="checkbox"] {
+    height: 15px !important;
+    margin-right: 10px;
+}
+
+.form-check-input:checked {
+    background: #A36986;
+}
+
+.form-check-label {
+    font-size: 0.75em;
+    line-height: 1.5em;
+}

@@ -1,0 +1,72 @@
+<div class="main-cadastro">
+    <div class="container-xl">
+        <h1 class="text-center raj">Crie sua Conta</h1>
+        <p class="text-center">Realize seu cadastro e fortaleça a cena feminina no mercado tecnológico.</p>
+        <div class="container-form col-4 offset-4">
+            <ul class="nav nav-tabs" id="cadastro-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="candidata-tab" data-bs-toggle="tab"
+                        data-bs-target="#cadastro-candidata" type="button" role="tab" aria-controls="cadastro-candidata"
+                        aria-selected="true">Candidata</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="empresa-tab" data-bs-toggle="tab" data-bs-target="#cadastro-empresa"
+                        type="button" role="tab" aria-controls="cadastro-empresa" aria-selected="false">Empresa</button>
+                </li>
+            </ul>
+
+            
+            
+            <!--<div class="formGroup">-->
+                
+                <div class="form-container-acesso container-cadastro tab-content"> 
+                <form [formGroup]="formCadastro" (ngSubmit)="onSubmit()">
+                    <div class="mb-3">
+                        <label for="nome-candidata">Qual o seu nome completo?</label>
+                        <input class="form-control" id="nome-candidata" type="text" formControlName = "nome" name="nome"
+                            placeholder="Nome completo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="cpf">Informa pra gente o seu CPF:</label>
+                        <input class="form-control" id="cpf" type="text" formControlName = "cpf" name="cpf"
+                            placeholder="Coloca apenas os números, tá?" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email-candidata">E qual o seu e-mail?</label>
+                        <input class="form-control" id="email-candidata" type="email" formControlName = "email" name="email"
+                            placeholder="Aquele e-mail que você mais acessa!" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="senha-candidata">Agora crie uma senha bem segura:</label>
+                        <input class="form-control senha" id="senha-candidata" type="password" formControlName = "senha" name="senha"
+                            placeholder="Não informe sua senha pra ninguém, ok?" required>
+                    </div>
+                    <div class="pt-1">
+                        <input type="submit" value="Iniciar Cadastro">
+                    </div>
+                </form>
+                <form #empresaForm="ngForm" (ngSubmit)="onSubmit()" id="cadastro-empresa" class="tab-pane fade" role="tabpanel" aria-labelledby="empresa-tab"
+                    method="post" action="/">
+                    <div class="mb-3">
+                        <label for="cpf-empresa">Informe o CNPJ:</label>
+                        <input class="form-control" id="cnpj" type="text" name="cnpj" placeholder="Apenas números"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email-empresa">informe o e-mail de contato:</label>
+                        <input class="form-control" id="email-empresa" type="email" name="email-empresa"
+                            placeholder="E-mail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="senha-empresa">Crie uma senha:</label>
+                        <input class="form-control senha" id="senha-empresa" type="password" name="senha-empresa"
+                            placeholder="Insira uma senha" required>
+                    </div>
+                    <div class="pt-1">
+                        <input type="submit" value="Iniciar Cadastro">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
